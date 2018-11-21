@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="algo.cpp" />
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="cRNAStructure.cpp" />
+    <ClCompile Include="match_data.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="make_aver_rna.cpp" />
+    <ClCompile Include="merge_rna.cpp" />
+    <ClCompile Include="multi_align.cpp" />
+    <ClCompile Include="multi_align_1.cpp" />
+    <ClCompile Include="multi_align_2.cpp" />
+    <ClCompile Include="multi_align_0.cpp" />
+    <ClCompile Include="parallel.cpp" />
+    <ClCompile Include="parallel_make_aver.cpp" />
+    <ClCompile Include="parameters.cpp" />
+    <ClCompile Include="print_to_pdb.cpp" />
+    <ClCompile Include="rna_structure_serialization.cpp" />
+    <ClCompile Include="rotation.cpp" />
+    <ClCompile Include="serializer.cpp" />
+    <ClCompile Include="pdb-parser\pdb_parser.cpp">
+      <Filter>pdb parser</Filter>
+    </ClCompile>
+    <ClCompile Include="distance\align.cpp">
+      <Filter>distance</Filter>
+    </ClCompile>
+    <ClCompile Include="distance\export.cpp">
+      <Filter>distance</Filter>
+    </ClCompile>
+    <ClCompile Include="distance\rmsd.cpp">
+      <Filter>distance</Filter>
+    </ClCompile>
+    <ClCompile Include="distance\tmscore.cpp">
+      <Filter>distance</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="algo.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="cRNAStructure.h" />
+    <ClInclude Include="match_data.h" />
+    <ClInclude Include="dirent.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="make_aver_rna.h" />
+    <ClInclude Include="multi_align.h" />
+    <ClInclude Include="parallel.h" />
+    <ClInclude Include="parameters.h" />
+    <ClInclude Include="print_to_pdb.h" />
+    <ClInclude Include="rotation.h" />
+    <ClInclude Include="pdb-parser\pdb_parser.h">
+      <Filter>pdb parser</Filter>
+    </ClInclude>
+    <ClInclude Include="distance\align.hpp">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance\export.hpp">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance\matrix.hpp">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance\protein.hpp">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance\rmsd.hpp">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance\vector.hpp">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance\tmscore.hpp">
+      <Filter>distance</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="pdb parser">
+      <UniqueIdentifier>{f0e51d47-dc2e-45ab-b934-60ba22c5bb9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="distance">
+      <UniqueIdentifier>{e7f8fb61-c4cb-426e-895d-b034c182ecb9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

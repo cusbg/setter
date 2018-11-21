@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "setter", "setter\setter.vcxproj", "{B8DD318A-4258-4D29-9348-1DBC5D78861F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8BD5B29-0569-4623-BA21-8F3A179950FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|x64 = debug|x64
+		release|x64 = release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8DD318A-4258-4D29-9348-1DBC5D78861F}.debug|x64.ActiveCfg = Debug|x64
+		{B8DD318A-4258-4D29-9348-1DBC5D78861F}.debug|x64.Build.0 = Debug|x64
+		{B8DD318A-4258-4D29-9348-1DBC5D78861F}.release|x64.ActiveCfg = Release|x64
+		{B8DD318A-4258-4D29-9348-1DBC5D78861F}.release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61AEC51E-5CE9-44B0-9D09-72F37E86310E}
+	EndGlobalSection
+EndGlobal

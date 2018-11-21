@@ -1,0 +1,67 @@
+<setter>
+  <!-- 
+  Possible types: pairwise,average,align,all-to-all
+  
+          pairwise: Pairwise structural superposition using SETTER
+          average: Building average structure and multiple structure superposition
+          align: Comparing a set of RNA structures with a previously built average structure
+          all-to-all: All to all pairwise distance computation using SETTER
+  -->
+  <task type="pairwise" />
+  
+  <arguments>
+    <argument name="configuration-file" value="config" />
+    <argument name="output-path" value="results" />
+    <argument name="output-file-prefix" value="out" />      
+    <argument name="log-file" value="log" />
+    <argument name="extra-superposition" value="true" />
+  </arguments>
+  
+  <setter-parameters>
+    <parameter name="p_no_head_step_ratio_divisor" value="10" />
+    <parameter name="p_pair_distance_threshold" value="6.0" />
+    <parameter name="p_identical_pair_nt_type_modifier" value="0.1" />
+    <parameter name="p_neck_shift" value="8" />
+    <parameter name="p_rotation_penalty" value="0.9" />
+    <parameter name="p_top_k_gssu" value="3" />
+    <parameter name="p_early_termination" value="1" />
+    <parameter name="p_identical_pair_sse_type_modifier" value="1" />
+  </setter-parameters>
+
+  <pairwise>    
+    <structures>
+      <structure chain="R" id="1" pdbfile="1asy.pdb" ssfile="1asy.out" ranges="" exclusions="" />
+      <structure chain="R" id="2" pdbfile="1asz.pdb" ssfile="1asz.out" ranges="" exclusions="" />
+    </structures>    
+  </pairwise>
+  
+  <average>    
+    <align-threshold value="4" />
+    <structures>
+      <structure chain="R" id="1" pdbfile="1asy.pdb" ssfile="1asy.out" ranges="" exclusions="" />
+      <structure chain="R" id="2" pdbfile="1asz.pdb" ssfile="1asz.out" ranges="" exclusions="" />
+      <structure chain="B" id="2" pdbfile="1c0a.pdb" ssfile="1c0a.out" ranges="" exclusions="" />
+      <structure chain="C" id="2" pdbfile="1efw.pdb" ssfile="1efw.out" ranges="" exclusions="" />
+      <structure chain="C" id="2" pdbfile="1il2.pdb" ssfile="1il2.out" ranges="" exclusions="" />
+    </structures>    
+  </average>
+  
+  <align>
+    <average-structure file="results/02.aver"/>
+    <align-threshold value="4" />
+    <structures>      
+      <structure chain="R" id="1" pdbfile="1asy.pdb" ssfile="1asy.out" ranges="" exclusions="" />
+      <structure chain="R" id="2" pdbfile="1asz.pdb" ssfile="1asz.out" ranges="" exclusions="" />
+      <structure chain="B" id="2" pdbfile="1c0a.pdb" ssfile="1c0a.out" ranges="" exclusions="" />
+      <structure chain="C" id="2" pdbfile="1efw.pdb" ssfile="1efw.out" ranges="" exclusions="" />
+      <structure chain="C" id="2" pdbfile="1il2.pdb" ssfile="1il2.out" ranges="" exclusions="" />      
+    </structures>    
+  </align>
+ 
+
+  <!--  
+  <all-to-all>
+  <all-to-all>
+  -->
+  
+</setter>

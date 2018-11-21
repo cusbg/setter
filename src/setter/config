@@ -1,0 +1,6 @@
+Threads: -1
+Algo: STANDARD
+Merge: ALTERNATING
+DiverMean: 0.9
+DiverParent: 2
+Script: 1

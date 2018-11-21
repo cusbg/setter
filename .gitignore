@@ -1,0 +1,9 @@
+# Dependencies
+/dependencies/boost
+/dependencies/tbb
+
+# Build directories
+build/
+
+# Project files
+.vs/
